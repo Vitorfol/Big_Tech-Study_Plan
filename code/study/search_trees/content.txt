@@ -1,0 +1,30 @@
+================================================================================
+GUIA DE IMPLEMENTAÇÃO: DFS, BFS, FLOOD FILL E DIJKSTRA COM HEAP
+================================================================================
+
+1. Dijkstra com Min-Heap (std::priority_queue)
+- Por que usar Heap? Sem heap, buscar o nó com a menor distância custa O(V), resultando 
+  em O(V^2 + E). Com o min-heap (`std::priority_queue` em ordem decrescente via `std::greater`), 
+  a extração do menor elemento cai para O(log V), tornando a complexidade total O((V + E) log V).
+- Detalhe importante em C++: O `std::priority_queue` padrão é um Max-Heap. Para criar um 
+  Min-Heap de pares `{dist, node}`, utilizamos:
+  `std::priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>>`
+
+2. DFS Recursivo vs. Iterativo com Pilha
+- Recursivo: Utiliza a Call Stack nativa. Extremamente conciso, mas pode causar Stack Overflow 
+  em árvores ou grafos extremamente profundos.
+- Pilha (`std::stack`): Simula explicitamente a pilha de chamadas (LIFO). Garante segurança 
+  contra estouro de pilha. Atenção: empilhe os vizinhos na ordem reversa se quiser manter 
+  a mesma paridade de visitação da esquerda para a direita do DFS recursivo.
+
+3. BFS com Fila (std::queue)
+- Utiliza FIFO (First-In, First-Out). É a ferramenta definitiva para encontrar o menor 
+  caminho em termos de número de arestas em grafos não ponderados.
+
+4. Flood Fill (Matriz 2D)
+- Implementado eficientemente usando uma matriz de direções (dr, dc) para varredura ortogonal 
+  (cima, baixo, esquerda, direita) guiada por uma Fila (BFS) ou Pilha (DFS).
+
+5. Componentes Conexas
+- Percorre todos os nós do grafo. Sempre que encontra um nó não visitado, incrementa o 
+  contador de componentes e varre toda a componente usando DFS/BFS.

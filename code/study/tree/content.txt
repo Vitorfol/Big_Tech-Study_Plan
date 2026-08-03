@@ -1,0 +1,58 @@
+================================================================================
+GUIA RÁPIDO DE ÁRVORES BINÁRIAS: TRAVESSIAS, BUSCA E INVERSÃO
+================================================================================
+
+Este documento resume os conceitos fundamentais, intuições e casos de uso em entrevistas
+para travessias em árvores (Pre-order, In-order, Post-order), Busca Binária em Árvores (BST Search)
+e Inversão de Árvore Binária.
+
+--------------------------------------------------------------------------------
+1. TRAVESSIAS EM ÁRVORES (DFS)
+--------------------------------------------------------------------------------
+
+A travessia Depth-First Search (DFS) visita nós em profundidade. Dependendo de *quando* 
+o nó atual (raiz) é processado em relação aos seus filhos (esquerda e direita), temos três ordens clássicas:
+
+A) Pré-ordem (Pre-order: Raiz -> Esquerda -> Direita)
+   - Quando usar: 
+     * Serialização e desserialização de árvores (salvar o estado da árvore em disco/string).
+     * Criação de cópias completas de árvores.
+     * Quando você precisa processar o pai antes de passar configurações ou estados para os filhos.
+   - Intuição: O topo da hierarquia é sempre visitado e resolvido primeiro.
+
+B) Em-ordem (In-order: Esquerda -> Raiz -> Direita)
+   - Quando usar: 
+     * **Árvores Binárias de Busca (BSTs)** exclusivamente. 
+     * A travessia in-order em uma BST visita os nós em **ordem estritamente crescente**.
+     * Útil para validar se uma árvore é uma BST válida, encontrar o k-ésimo menor elemento ou fazer consultas por intervalo (range queries).
+   - Intuição: Respeita a ordenação natural dos elementos da esquerda (menores) para a direita (maiores).
+
+C) Pós-ordem (Post-order: Esquerda -> Direita -> Raiz)
+   - Quando usar: 
+     * Deleção de árvores (liberação de memória / destruição de nós), pois você precisa deletar os filhos antes de deletar o pai.
+     * Cálculos bottom-up (de baixo para cima), como calcular a altura de uma árvore, diâmetro, ou verificar se a árvore está balanceada, onde o pai depende obrigatoriamente do resultado processado pelos filhos.
+   - Intuição: Os filhos concluem seus cálculos antes de reportar o valor para o pai.
+
+
+--------------------------------------------------------------------------------
+2. BUSCA BINÁRIA EM ÁRVORES (BST SEARCH)
+--------------------------------------------------------------------------------
+
+- O que é: Algoritmo para encontrar um valor em uma Binary Search Tree (BST) explorando sua propriedade estrutural (valores menores à esquerda, maiores à direita).
+- Por que usar: 
+     * Evita percorrer toda a árvore ($O(N)$). 
+     * Descarta metade da árvore a cada passo, reduzindo a complexidade de tempo para **$O(\log N)$** em árvores balanceadas (ou $O(H)$ onde $H$ é a altura).
+- Implementação iterativa vs. recursiva: A abordagem iterativa com `while` consome $O(1)$ de espaço auxiliar, sendo preferível à recursiva para evitar consumo desnecessário da pilha de execução (call stack).
+
+
+--------------------------------------------------------------------------------
+3. INVERSÃO DE UMA ÁRVORE BINÁRIA (INVERT BINARY TREE)
+--------------------------------------------------------------------------------
+
+- O que é: O clássico problema de trocar os ponteiros esquerdo e direito de cada nó da árvore recursivamente (espelhamento horizontal).
+- Por que usar / Utilidade:
+     * Comum em entrevistas como teste rápido de manipulação de ponteiros e recursão.
+     * Utilizado em algoritmos de geometria computacional, renderização gráfica ou balanceamento/transformação estrutural onde o layout espacial precisa ser invertido.
+- Complexidade: 
+     * Tempo: $O(N)$ pois cada nó é visitado exatamente uma vez.
+     * Espaço: $O(H)$ devido à pilha de chamadas recursivas.
