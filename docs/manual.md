@@ -26,27 +26,27 @@ Cycles change. They explain **what to study during a specific period**.
 ## 2. Document Structure
 
 ```text
-00_manual_operacao_big_tech.md
+docs/manual.md
     Stable system foundation.
 
-10_cycle_template.md
+docs/cycle_template.md
     Copyable template for building 4-week cycles.
 
-20_cycles/
+cycles/
     Directory with real cycle instances.
-    Example: cycle_0.md, cycle_1.md, cycle_2.md
+    Example: 0.md, 1.md, 2.md
 
-30_content_tracker.md
+docs/contents.md
     Living list of content studied, organized by track, status, and last review.
 
-40_mistake_log.md
-    Record of recurring mistakes.
+code/lc/
+    LeetCode and interview problems.
 
-50_system_design_notes.md
-    Accumulated System Design notes.
+code/study/
+    Experiments, implementations, prototypes and deeper explorations.
 
-60_behavioral_story_bank.md
-    STAR/CARL story bank.
+prompts/
+    Prompt files used to distinct agents.
 ```
 
 Practical rule:
@@ -55,7 +55,12 @@ Practical rule:
 - The **cycle template** changes rarely.
 - The **cycle_X.md** changes every cycle.
 - The **content tracker** changes constantly.
-- The **mistake log** changes constantly.
+
+> Suggestion (not yet adopted): the mistake log, System Design notes, and behavioral story bank are currently referenced conceptually (see Sections 5, 10) but have no dedicated file. If mistake tracking, SD notes, or STAR/CARL stories grow enough to need their own space, consider adding:
+> - `docs/mistake_log.md` — recurring mistakes across cycles.
+> - `docs/system_design_notes.md` — accumulated System Design notes.
+> - `docs/behavioral_story_bank.md` — STAR/CARL story bank.
+> Until then, this content lives inside cycle files and contents.md.
 
 ---
 
