@@ -330,18 +330,22 @@ The Mock/Career track is flexible: during an application-focused week, the resum
 ```text
 Coding / DS: 8 quarters
 System Design: 2 quarters
-Mock / Career: 0 quarters
-Buffer: 0.5–1 quarter
+Mock / Career: optional use of the weekend buffer
+Buffer: 0.5–1 quarter for review, cleanup, or a light Mock/Career task
 ```
 
 ### Week B — With Mock/Career
 
 ```text
-Coding / DS: 7 quarters
-System Design: 2 quarters
+Coding / DS: 6 quarters
+System Design: 3 quarters
 Mock / Career: 1 quarter
-Buffer: 0.5–1 quarter
+Buffer: 0.5–1 quarter for organization, recalibration, or the next-cycle review
 ```
+
+These allocations are defaults, not quotas to recover mechanically. When travel,
+energy, or real interview processes reduce capacity, preserve high-value practice
+and skip lower-priority work rather than creating unsustainable catch-up.
 
 ---
 
