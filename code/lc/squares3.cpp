@@ -8,6 +8,7 @@ public:
         int l= 0;
         int r= size-1;
         vector<int> optimal;
+	optimal.reserve(size);
         while (l<=r) {
             int lv = abs(nums[l]);
             int rv = abs(nums[r]);
