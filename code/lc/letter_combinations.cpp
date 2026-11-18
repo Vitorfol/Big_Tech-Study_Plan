@@ -54,10 +54,11 @@ public:
         mapping[9] = {"w", "x", "y", "z"};
     }
 
-    vector<string> compute_combinations(vector<string>& s1, const vector<string>& s2) {
+    vector<string> compute_combinations(const vector<string>& s1, const vector<string>& s2) {
         vector<string> computed_combination;
-        for (string str : s1) {
-            for (string character : s2) {
+        computed_combination.reserve(256);
+        for (const string& str : s1) {
+            for (const string& character : s2) {
                 computed_combination.push_back(str + character);
             }
         }
@@ -72,7 +73,6 @@ public:
         fill_mapping(mapping);
         
         vector<string> strings {""};
-        strings.reserve(256);
 
         for (size_t i=0; i<digits.size(); ++i) {
             int key = digits[i]-'0';
