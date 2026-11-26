@@ -13,9 +13,9 @@
 | **Sex (27/11)** | **Grupo 3:** Busca e Otimização | 2 questões | **Mock Monteiro** |
 | **Sáb (28/11)** | **Grupo 1:** Linear + **Grupo 4:** Leitura rápida | 3 questões | — |
 | **Dom (29/11)** | *Dia livre de grupo* (Buffer / Editoriais) | 3 questões | — |
-| **Seg (30/11)** | Consolidar anotações (gatilhos, templates, edge cases) | — | **Mock 4** **Alyson** |
+| **Seg (30/11)** | Consolidar anotações | — | **Mock 4** **Alyson** |
 | **Ter (01/12)** | Revisão leve | — | **Coding Interview 1** |
-| **Qua (02/12)** | Revisão leve / descanso | — | **Coding Interview 2** |
+| **Qua (02/12)** | Revisão leve  | — | **Coding Interview 2** |
 
 ---
 
@@ -62,8 +62,8 @@
 * \[ \] **Revisão — Grupo 4: Leitura Rápida (Editorial)**
   * \[ \] Fast and Slow Pointers
   * \[ \] Linked List Reversal
-* \[ \] **Questão Uber (6/10):** `Word Search`
-* \[ \] **Questão Uber (7/10):** `Leftmost Column with at Least a One`
+* \[ \] **Questão Uber (6/10):** *(escolher na aba Uber)*
+* \[ \] **Questão Uber (7/10):** *(escolher na aba Uber)*
 
 ### Domingo (29/11)
 
