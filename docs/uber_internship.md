@@ -1,19 +1,19 @@
 # Plano de Reta Final — Coding Interviews Uber (25/11 a 02/12)
 
-> **Objetivo:** Consolidar padrões da aba `Basics` (com foco em questões de *Hint/Editorial*), resolver **10 questões da aba `Uber`** e realizar **4 Mock Interviews** antes das entrevistas nos dias **01/12** e **02/12**.
+> **Objetivo:** Consolidar padrões da aba `Basics` (com foco em questões de *Hint/Editorial*), resolver **12 questões da aba `Uber`** e realizar **5 Mock Interviews** antes das entrevistas nos dias **01/12** e **02/12**.
 
 ---
 
 ## Visão Geral da Semana
 
-| Dia | Grupo de Revisão | Questões Uber (Total: 10) | Mock / Entrevista |
+| Dia | Grupo de Revisão | Questões Uber (Total: 12) | Mock / Entrevista |
 | :--- | :--- | :--- | :--- |
 | **Qua (25/11)** | — | — | **Mock João** |
 | **Qui (26/11)** | **Grupo 2:** Grafo e Árvore | 2 questões | **Mock Gusta** |
 | **Sex (27/11)** | **Grupo 3:** Busca e Otimização | 2 questões | **Mock Monteiro** |
-| **Sáb (28/11)** | **Grupo 1:** Linear + **Grupo 4:** Leitura rápida | 3 questões | — |
+| **Sáb (28/11)** | **Grupo 1:** Linear + **Grupo 4:** Leitura rápida | 3 questões | **Mock Ana** |
 | **Dom (29/11)** | *Dia livre de grupo* (Buffer / Editoriais) | 3 questões | — |
-| **Seg (30/11)** | Consolidar anotações | — | **Mock 4** **Alyson** |
+| **Seg (30/11)** | Consolidar anotações | 2 questões | **Mock 5** **Alyson** |
 | **Ter (01/12)** | Revisão leve | — | **Coding Interview 1** |
 | **Qua (02/12)** | Revisão leve  | — | **Coding Interview 2** |
 
@@ -64,6 +64,8 @@
   * \[ \] Linked List Reversal
 * \[ \] **Questão Uber (6/10):** *(escolher na aba Uber)*
 * \[ \] **Questão Uber (7/10):** *(escolher na aba Uber)*
+* \[ \] **Mock Interview — Ana (60 min)**
+  * *Pontos de melhoria / anotações:*
 
 ### Domingo (29/11)
 
@@ -75,7 +77,9 @@
 ### Segunda-feira (30/11)
 
 * \[ \] **Consolidar Anotações:** Gatilhos de padrões, templates de Binary Search/BFS/DFS/DP e principais *edge cases*
-* \[ \] **Mock Interview 4 — Final (60 min)**
+* \[ \] **Questão Uber (11/12):** *(escolher na aba Uber)*
+* \[ \] **Questão Uber (12/12):** *(escolher na aba Uber)*
+* \[ \] **Mock Interview 5 — Final (60 min)**
   * *Pontos de melhoria / anotações:*
 * \[ \] **Revisar Roteiro Não-Técnico:**
   * \[ \] Template de tempo (Greeting $\rightarrow$ Clarificação/Complexidade $\rightarrow$ Código + Dry-run $\rightarrow$ Pergunta final)
